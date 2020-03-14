@@ -1,0 +1,17 @@
+Implementation code
+
+
+
+
+# Export the model to a SavedModel
+model.save('path_to_saved_model', save_format='tf')
+
+# Recreate the exact same model
+new_model = keras.models.load_model('path_to_saved_model')
+
+# Check that the state is preserved
+new_predictions = new_model.predict(x_test)
+np.testing.assert_allclose(predictions, new_predictions, rtol=1e-6, atol=1e-6)
+
+# Note that the optimizer state is preserved as well:
+# you can resume training where you left off.
