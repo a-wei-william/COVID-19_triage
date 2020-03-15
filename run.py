@@ -66,6 +66,6 @@ if __name__ == "__main__":
             image_elem.Update(data=jpg_to_png(path_to_file))
             output_elem.Update(probability)
         if event in ('About...'):
-            sg.popup('About this project',title='About',button_type=POPUP_BUTTONS_NO_BUTTONS)
+            sg.popup('blahblahblah',title='About',size=(200,200))
 
     window.close()
