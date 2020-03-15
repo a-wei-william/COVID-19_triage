@@ -38,7 +38,7 @@ training_set = train_datagen.flow_from_directory('/content/hackmed2020/train',
                                                  
                                                  
                                                  
-                                                 import numpy as np
+import numpy as np
 from keras.preprocessing import image
 
 test_image = image.load_img('dataset/single_prediction/cat_or_dog_1.jpg', target_size(64,64))
