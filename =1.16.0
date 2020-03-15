@@ -1,0 +1,14 @@
+Uninstalling tensorflow-1.15.0:
+  Would remove:
+    /home/lukebfox/.local/bin/estimator_ckpt_converter
+    /home/lukebfox/.local/bin/freeze_graph
+    /home/lukebfox/.local/bin/saved_model_cli
+    /home/lukebfox/.local/bin/tensorboard
+    /home/lukebfox/.local/bin/tf_upgrade_v2
+    /home/lukebfox/.local/bin/tflite_convert
+    /home/lukebfox/.local/bin/toco
+    /home/lukebfox/.local/bin/toco_from_protos
+    /home/lukebfox/.local/lib/python3.7/site-packages/tensorflow-1.15.0.dist-info/*
+    /home/lukebfox/.local/lib/python3.7/site-packages/tensorflow/*
+    /home/lukebfox/.local/lib/python3.7/site-packages/tensorflow_core/*
+Proceed (y/n)? 
