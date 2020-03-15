@@ -15,3 +15,26 @@ np.testing.assert_allclose(predictions, new_predictions, rtol=1e-6, atol=1e-6)
 
 # Note that the optimizer state is preserved as well:
 # you can resume training where you left off.
+
+
+
+
+
+
+
+
+train_datagen = ImageDataGenerator(rescale=1./255,
+                                   rotation_range=15,
+                                   shear_range=0.2,
+                                   zoom_range=0.2
+                                   )
+
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+training_set = train_datagen.flow_from_directory('/content/hackmed2020/train',
+                                                 target_size=(image_width, image_height),
+                                                 batch_size=batch_size,
+                                                 class_mode='binary')
+
+
+
