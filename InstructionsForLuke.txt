@@ -35,6 +35,17 @@ training_set = train_datagen.flow_from_directory('/content/hackmed2020/train',
                                                  target_size=(image_width, image_height),
                                                  batch_size=batch_size,
                                                  class_mode='binary')
+                                                 
+                                                 
+                                                 
+                                                 import numpy as np
+from keras.preprocessing import image
+
+test_image = image.load_img('dataset/single_prediction/cat_or_dog_1.jpg', target_size(64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image,axis=0)
+result = classifier.predict(test_image)
+training_set.class_indices
 
 
 
