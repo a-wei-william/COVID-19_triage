@@ -58,6 +58,7 @@ if __name__ == "__main__":
             path_to_file = open_file()
             img = image.load_img(path_to_file, target_size=(150,150))
             img = image.img_to_array(img)
+            img = img/250
             img = np.expand_dims(img,axis=0)
             prediction = model.predict(img)
             prediction = prediction.flatten()[0]#
